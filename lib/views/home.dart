@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../utils/general.dart';
-import './shared/top_menu.dart';
-import 'shared/section_intro1.dart';
-import 'shared/section_intro2.dart';
+import './shared/top_menu.dart' show TopMenu;
+import 'shared/section_intro1.dart' show SectionIntro1;
+import 'shared/section_intro2.dart' show SectionIntro2;
+import 'shared/section_about.dart' show SectionAbout;
+import 'shared/section_challenge.dart' show SectionChallenge;
 
 class Home extends StatelessWidget {
   Home({Key key}) : super(key: key);
@@ -18,6 +20,8 @@ class Home extends StatelessWidget {
             TopMenu(),
             SectionIntro1(),
             SectionIntro2(),
+            SectionChallenge(),
+            SectionAbout(),
           ],
         ),
       ),

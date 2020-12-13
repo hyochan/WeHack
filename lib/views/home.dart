@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../utils/general.dart';
 import './shared/top_menu.dart';
 import 'shared/section_intro.dart';
+import 'shared/section_about.dart';
 
 class Home extends StatelessWidget {
   Home({Key key}) : super(key: key);
@@ -16,6 +17,7 @@ class Home extends StatelessWidget {
           children: [
             TopMenu(),
             SectionIntro(),
+            SectionAbout(),
           ],
         ),
       ),

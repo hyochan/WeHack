@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         backgroundColor: Asset.Colors.darkBackground,
+        scaffoldBackgroundColor: Colors.black,
         fontFamily: 'NotoSans',
         textTheme: TextTheme(
           headline1: TextStyle(

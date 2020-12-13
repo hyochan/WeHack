@@ -9,7 +9,7 @@ class Colors {
   static const blue = Color.fromARGB(255, 175, 194, 219);
   static const purple = Color.fromARGB(255, 182, 105, 249);
   static const disabled = Color.fromARGB(255, 210, 210, 210);
-  static const darkBackground = Color.fromARGB(255, 18, 18, 18);
+  static const darkBackground = Color.fromARGB(255, 24, 24, 24);
   static const primary = Color.fromARGB(255, 68, 82, 254);
 }
 

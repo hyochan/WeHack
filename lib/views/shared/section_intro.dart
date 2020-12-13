@@ -17,6 +17,7 @@ class SectionIntro extends StatelessWidget {
             child: Text(
               'WeHack 2021',
               style: Theme.of(context).textTheme.headline1,
+              textAlign: TextAlign.center,
             ),
           ),
           Container(
@@ -50,7 +51,7 @@ class SectionIntro extends StatelessWidget {
             margin: EdgeInsets.only(top: 48, bottom: 85),
             child: Column(
               children: [
-                Text('행사기간', style: Theme.of(context).textTheme.bodyText1),
+                Text('심사발표', style: Theme.of(context).textTheme.bodyText1),
                 Text('4월 29일', style: Theme.of(context).textTheme.bodyText2),
               ],
             ),

@@ -70,6 +70,7 @@ class TopMenu extends StatelessWidget {
                     .map((e) => NavInkText(
                           text: e ?? '',
                           margin: EdgeInsets.only(right: 40),
+                          onTap: () => {},
                         ))
                     .toList()),
           ),

@@ -49,6 +49,8 @@ flutter:
   assets:
     - res/langs/en.json
     - res/langs/ko.json
+    - res/images/
+    - res/icons/
 
   fonts:
     - family: Timmana

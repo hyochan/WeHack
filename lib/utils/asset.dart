@@ -15,5 +15,16 @@ class Colors {
 
 class Icons {
   Icons._();
-  // static var icAppTitle = AssetImage('res/icons/appTitle.png');
+  static AssetImage appIcon192 = AssetImage('res/icons/icon-192.png');
+  static AssetImage appIcon512 = AssetImage('res/icons/icon-512.png');
+}
+
+class Images {
+  Images._();
+  static AssetImage about = AssetImage('res/images/about.png');
+  static AssetImage screenshot1 = AssetImage('res/images/screenshot-1.png');
+  static AssetImage screenshot2 = AssetImage('res/images/screenshot-2.png');
+  static AssetImage screenshot3 = AssetImage('res/images/screenshot-3.png');
+  static AssetImage hackatalk1 = AssetImage('res/images/hackatalk-1.png');
+  static AssetImage hackatalk2 = AssetImage('res/images/hackatalk-2.png');
 }

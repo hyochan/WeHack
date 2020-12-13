@@ -1,4 +1,8 @@
 {
   "LOADING": "Loading...",
-  "INTRO": "Create App!"
+  "ABOUT": "About",
+  "CHALLENGE": "Challenge",
+  "PRIZES": "Prizes",
+  "TIMELINE": "Timeline",
+  "REGISTER": "Register"
 }

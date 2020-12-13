@@ -1,4 +1,8 @@
 {
   "LOADING": "로딩중...",
-  "INTRO": "앱을 만들어봐요!"
+  "ABOUT": "소개",
+  "CHALLENGE": "도전",
+  "PRIZES": "상금",
+  "TIMELINE": "타임라인",
+  "REGISTER": "등록하기"
 }

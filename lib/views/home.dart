@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../utils/theme.dart' as Theme;
 import '../utils/localization.dart' show Localization;
 import '../utils/general.dart';
+import './shared/top_menu.dart';
 
 class Home extends StatelessWidget {
   Home({Key key}) : super(key: key);
@@ -10,8 +10,13 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).backgroundColor,
       body: Container(
-        child: Text('Empty'),
+        child: ListView(
+          children: [
+            TopMenu(),
+          ],
+        ),
       ),
     );
   }

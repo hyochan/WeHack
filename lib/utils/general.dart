@@ -20,7 +20,8 @@ class General {
     return cursorPos;
   }
 
-  Future<Object> navigateScreenNamed(BuildContext context, String routeName, { bool reset = false }) {
+  Future<Object> navigateScreenNamed(BuildContext context, String routeName,
+      {bool reset = false}) {
     if (reset) {
       return Navigator.pushNamedAndRemoveUntil(
         context,
@@ -31,7 +32,8 @@ class General {
     return Navigator.of(context).pushNamed(routeName);
   }
 
-  void showDialogSpinner(BuildContext context, {
+  void showDialogSpinner(
+    BuildContext context, {
     String str,
     TextStyle txtStyle,
   }) {
@@ -41,9 +43,8 @@ class General {
         builder: (BuildContext context) {
           return DialogSpinner(
             txtStyle: txtStyle,
-            txt: str != null ? str : Localization.of(context).trans('LOADING'),
+            text: str != null ? str : Localization.of(context).trans('LOADING'),
           );
-        }
-    );
+        });
   }
 }

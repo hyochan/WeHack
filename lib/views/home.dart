@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../utils/localization.dart' show Localization;
 import '../utils/general.dart';
 import './shared/top_menu.dart';
+import './shared/intro.dart';
 
 class Home extends StatelessWidget {
   Home({Key key}) : super(key: key);
@@ -15,6 +15,7 @@ class Home extends StatelessWidget {
         child: ListView(
           children: [
             TopMenu(),
+            Intro(),
           ],
         ),
       ),

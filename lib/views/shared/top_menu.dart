@@ -59,7 +59,7 @@ class TopMenu extends StatelessWidget {
             margin: EdgeInsets.only(left: 20, right: 140),
             child: Text(
               'WeHack',
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.headline2,
               textAlign: TextAlign.center,
             ),
           ),

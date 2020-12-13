@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   flutter_localizations:
     sdk: flutter
 
@@ -48,6 +49,27 @@ flutter:
   assets:
     - res/langs/en.json
     - res/langs/ko.json
+
+  fonts:
+    - family: Timmana
+      fonts:
+        - asset: fonts/Timmana-Regular.ttf
+
+    - family: NotoSans
+      fonts:
+        - asset: fonts/NotoSansKR-Regular.otf
+        - asset: fonts/NotoSansKR-Thin.otf
+          weight: 100
+        - asset: fonts/NotoSansKR-Light.otf
+          weight: 300
+        - asset: fonts/NotoSansKR-Regular.otf
+          weight: 400
+        - asset: fonts/NotoSansKR-Medium.otf
+          weight: 500
+        - asset: fonts/NotoSansKR-Bold.otf
+          weight: 700
+        - asset: fonts/NotoSansKR-Black.otf
+          weight: 900
 
   # To add assets to your application, add an assets section, like this:
   # assets:

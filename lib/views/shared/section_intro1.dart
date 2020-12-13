@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wehack/utils/localization.dart' show Localization;
 import 'package:wehack/views/shared/button.dart';
 
-class SectionIntro extends StatelessWidget {
+class SectionIntro1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var localization = Localization.of(context);

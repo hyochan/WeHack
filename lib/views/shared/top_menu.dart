@@ -40,8 +40,8 @@ class TopMenu extends StatelessWidget {
     Localization localization = Localization.of(context);
 
     List<String> navMenus = [
-      localization.trans('ABOUT'),
       localization.trans('CHALLENGE'),
+      localization.trans('ABOUT'),
       localization.trans('PRIZES'),
       localization.trans('TIMELINE'),
     ];

@@ -7,6 +7,8 @@ import 'shared/section_intro2.dart' show SectionIntro2;
 import 'shared/section_about.dart' show SectionAbout;
 import 'shared/section_challenge.dart' show SectionChallenge;
 import 'shared/section_prize.dart' show SectionPrize;
+import 'shared/section_mentors.dart' show SectionMentors;
+import 'shared/section_partners.dart' show SectionPartners;
 
 class Home extends StatelessWidget {
   Home({Key key}) : super(key: key);
@@ -24,6 +26,8 @@ class Home extends StatelessWidget {
             SectionChallenge(),
             SectionAbout(),
             SectionPrize(),
+            SectionMentors(),
+            SectionPartners(),
           ],
         ),
       ),

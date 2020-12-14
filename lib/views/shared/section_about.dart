@@ -19,7 +19,7 @@ class SectionAbout extends StatelessWidget {
               children: [
                 Text(
                   localization.trans('ABOUT'),
-                  style: Theme.of(context).textTheme.bodyText1.merge(TextStyle(
+                  style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,
                       )),
                   textAlign: TextAlign.center,
@@ -28,7 +28,7 @@ class SectionAbout extends StatelessWidget {
                   margin: EdgeInsets.only(top: 28),
                   child: Text(
                     'HackaTalk은 어떤 프로젝트인가요?',
-                    style: Theme.of(context).textTheme.bodyText2,
+                    style: Theme.of(context).textTheme.subtitle2,
                     textAlign: TextAlign.center,
                   ),
                 )

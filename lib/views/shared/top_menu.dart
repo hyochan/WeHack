@@ -78,7 +78,7 @@ class TopMenu extends StatelessWidget {
               margin: EdgeInsets.only(left: 68),
               child: Button(
                 backgroundColor: Theme.of(context).backgroundColor,
-                borderColor: Theme.of(context).textTheme.bodyText1.color,
+                borderColor: Theme.of(context).textTheme.subtitle1.color,
                 borderWidth: 1,
                 width: 161,
                 text: localization.trans('REGISTER'),

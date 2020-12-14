@@ -17,6 +17,9 @@ class Icons {
   Icons._();
   static AssetImage appIcon192 = AssetImage('res/icons/icon-192.png');
   static AssetImage appIcon512 = AssetImage('res/icons/icon-512.png');
+  static AssetImage food = AssetImage('res/icons/food.png');
+  static AssetImage ribbon = AssetImage('res/icons/ribbon.png');
+  static AssetImage skull = AssetImage('res/icons/skull.png');
 }
 
 class Images {

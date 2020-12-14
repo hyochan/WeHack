@@ -25,13 +25,18 @@ class MyApp extends StatelessWidget {
               color: Colors.white, fontSize: 36, fontFamily: 'Timmana'),
           caption: TextStyle(
               color: Colors.white, fontSize: 16, fontFamily: 'NotoSans'),
-          bodyText1: TextStyle(
+          subtitle1: TextStyle(
               color: Colors.white, fontSize: 24, fontFamily: 'NotoSans'),
-          bodyText2: TextStyle(
+          subtitle2: TextStyle(
               color: Colors.white,
               fontSize: 24,
               fontFamily: 'NotoSans',
               fontWeight: FontWeight.w300),
+          bodyText1: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontFamily: 'NotoSans',
+              fontWeight: FontWeight.w400),
         ),
         primaryColor: Asset.Colors.primary,
         buttonColor: Asset.Colors.primary,

@@ -81,68 +81,71 @@ class SectionChallenge extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.only(top: 150),
-                  child: Row(
-                    children: [
-                      Image(
-                        image: Asset.Images.hackatalk1,
-                        height: 622,
-                        width: 350,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(left: 17, right: 45),
-                        child: Image(
-                          image: Asset.Images.hackatalk2,
+                FittedBox(
+                  child: Container(
+                    margin: EdgeInsets.only(top: 150),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image(
+                          image: Asset.Images.hackatalk1,
                           height: 622,
                           width: 350,
                         ),
-                      ),
-                      Column(
-                        children: [
-                          SideText(
-                            title: 'Github을 통한 오픈소스 프로젝트',
-                            text: '여러 사람들과 함께 커밋을 통해 성장하세요.',
-                            image: Image(
-                              image: Asset.Icons.food,
-                              height: 25.5,
-                              width: 23.6,
-                            ),
-                            margin: EdgeInsets.only(
-                              bottom: 55,
-                            ),
+                        Container(
+                          margin: EdgeInsets.only(left: 17, right: 45),
+                          child: Image(
+                            image: Asset.Images.hackatalk2,
+                            height: 622,
+                            width: 350,
                           ),
-                          SideText(
-                            title: 'HackaTalk의 여러 얼굴',
-                            text:
-                                '모든 팀에서 각기 다른 방향성을 가진 아이디어를 실제로 구체화하여 HackaTalk에 기여해보세요.',
-                            image: Image(
-                              image: Asset.Icons.skull,
-                              height: 30,
-                              width: 29,
+                        ),
+                        Column(
+                          children: [
+                            SideText(
+                              title: 'Github을 통한 오픈소스 프로젝트',
+                              text: '여러 사람들과 함께 커밋을 통해 성장하세요.',
+                              image: Image(
+                                image: Asset.Icons.food,
+                                height: 25.5,
+                                width: 23.6,
+                              ),
+                              margin: EdgeInsets.only(
+                                bottom: 55,
+                              ),
                             ),
-                            margin: EdgeInsets.only(
-                              bottom: 55,
+                            SideText(
+                              title: 'HackaTalk의 여러 얼굴',
+                              text:
+                                  '모든 팀에서 각기 다른 방향성을 가진 아이디어를 실제로 구체화하여 HackaTalk에 기여해보세요.',
+                              image: Image(
+                                image: Asset.Icons.skull,
+                                height: 30,
+                                width: 29,
+                              ),
+                              margin: EdgeInsets.only(
+                                bottom: 55,
+                              ),
                             ),
-                          ),
-                          SideText(
-                            title: '무궁무진한 발전 가능성',
-                            text:
-                                '내가 생각하는 채팅앱의 피쳐들을 이이디에이션 하고 실제 결과물까지 완성하여 실력을 뽐내주세요.',
-                            image: Image(
-                              image: Asset.Icons.ribbon,
-                              height: 41,
-                              width: 19,
+                            SideText(
+                              title: '무궁무진한 발전 가능성',
+                              text:
+                                  '내가 생각하는 채팅앱의 피쳐들을 이이디에이션 하고 실제 결과물까지 완성하여 실력을 뽐내주세요.',
+                              image: Image(
+                                image: Asset.Icons.ribbon,
+                                height: 41,
+                                width: 19,
+                              ),
+                              margin: EdgeInsets.only(
+                                bottom: 55,
+                              ),
                             ),
-                            margin: EdgeInsets.only(
-                              bottom: 55,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),

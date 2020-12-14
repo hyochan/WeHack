@@ -23,10 +23,13 @@ class NavInkText extends StatelessWidget {
       margin: this.margin,
       padding: this.padding,
       child: InkWell(
-        child: Text(
-          this.text,
-          style: Theme.of(context).textTheme.caption,
-          textAlign: TextAlign.center,
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+          child: Text(
+            this.text,
+            style: Theme.of(context).textTheme.caption,
+            textAlign: TextAlign.center,
+          ),
         ),
         onTap: this.onTap,
       ),
@@ -49,43 +52,45 @@ class TopMenu extends StatelessWidget {
     return Container(
       height: 140,
       width: double.infinity,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Container(
-            height: 44,
-            margin: EdgeInsets.only(left: 20, right: 140),
-            child: Text(
-              'WeHack',
-              style: Theme.of(context).textTheme.headline2,
-              textAlign: TextAlign.center,
+      child: FittedBox(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              height: 44,
+              margin: EdgeInsets.only(left: 72, right: 140),
+              child: Text(
+                'WeHack',
+                style: Theme.of(context).textTheme.headline2,
+                textAlign: TextAlign.center,
+              ),
             ),
-          ),
-          Container(
-            height: 44,
-            child: Row(
-                children: navMenus
-                    .map((e) => NavInkText(
-                          text: e ?? '',
-                          margin: EdgeInsets.only(right: 40),
-                          onTap: () => {},
-                        ))
-                    .toList()),
-          ),
-          Container(
-              margin: EdgeInsets.only(left: 68),
-              child: Button(
-                backgroundColor: Theme.of(context).backgroundColor,
-                borderColor: Theme.of(context).textTheme.subtitle1.color,
-                borderWidth: 1,
-                width: 161,
-                text: localization.trans('REGISTER'),
-                textStyle: Theme.of(context).textTheme.caption,
-                onPress: () => {},
-              ))
-        ],
+            Container(
+              height: 44,
+              child: Row(
+                  children: navMenus
+                      .map((e) => NavInkText(
+                            text: e ?? '',
+                            margin: EdgeInsets.only(right: 40),
+                            onTap: () => {},
+                          ))
+                      .toList()),
+            ),
+            Container(
+                margin: EdgeInsets.only(left: 52, right: 28),
+                child: Button(
+                  backgroundColor: Theme.of(context).backgroundColor,
+                  borderColor: Theme.of(context).textTheme.subtitle1.color,
+                  borderWidth: 1,
+                  width: 161,
+                  text: localization.trans('REGISTER'),
+                  textStyle: Theme.of(context).textTheme.caption,
+                  onPress: () => {},
+                ))
+          ],
+        ),
       ),
     );
   }

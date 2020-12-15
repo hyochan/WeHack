@@ -1,4 +1,4 @@
-# wehack
+# WeHack
 
 A new Flutter application.
 

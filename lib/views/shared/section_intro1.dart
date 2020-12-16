@@ -69,7 +69,6 @@ class SectionIntro1 extends StatelessWidget {
                   onPress: () => {},
                 ),
                 Button(
-                  margin: EdgeInsets.only(left: 30),
                   backgroundColor: Theme.of(context).backgroundColor,
                   borderColor: Theme.of(context).textTheme.subtitle1.color,
                   borderWidth: 1,

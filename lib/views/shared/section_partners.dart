@@ -39,3 +39,4 @@ class SectionPartners extends StatelessWidget {
     );
   }
 }
+

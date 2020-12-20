@@ -67,19 +67,20 @@ class TopMenu extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
+            // Container(
+            //   height: 44,
+            //   child: Row(
+            //       children: navMenus
+            //           .map((e) => NavInkText(
+            //                 text: e ?? '',
+            //                 margin: EdgeInsets.only(right: 40),
+            //                 onTap: () => {},
+            //               ))
+            //           .toList()),
+            // ),
             Container(
-              height: 44,
-              child: Row(
-                  children: navMenus
-                      .map((e) => NavInkText(
-                            text: e ?? '',
-                            margin: EdgeInsets.only(right: 40),
-                            onTap: () => {},
-                          ))
-                      .toList()),
-            ),
-            Container(
-                margin: EdgeInsets.only(left: 52, right: 28),
+                margin:
+                    EdgeInsets.only(left: 52, right: 28, top: 20, bottom: 20),
                 child: Button(
                   backgroundColor: Theme.of(context).backgroundColor,
                   borderColor: Theme.of(context).textTheme.subtitle1.color,

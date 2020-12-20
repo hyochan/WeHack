@@ -83,7 +83,7 @@ class SectionChallenge extends StatelessWidget {
                 ),
                 FittedBox(
                   child: Container(
-                    margin: EdgeInsets.only(top: 150),
+                    margin: EdgeInsets.only(top: 80),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [

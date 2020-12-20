@@ -91,6 +91,8 @@ class SectionMentors extends StatelessWidget {
                 ),
                 Container(
                   child: Wrap(
+                    spacing: 12,
+                    runSpacing: 12,
                     children: [
                       MentorBox(
                         name: '박태성',

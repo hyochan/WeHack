@@ -20,6 +20,12 @@ class Icons {
   static AssetImage food = AssetImage('res/icons/food.png');
   static AssetImage ribbon = AssetImage('res/icons/ribbon.png');
   static AssetImage skull = AssetImage('res/icons/skull.png');
+  static AssetImage networkDefines = AssetImage('res/icons/networkDefines.png');
+  static AssetImage collectors = AssetImage('res/icons/collectors.png');
+  static AssetImage haii = AssetImage('res/icons/haii.png');
+  static AssetImage megazoneCloud = AssetImage('res/icons/megazone_cloud.png');
+  static AssetImage modusign = AssetImage('res/icons/modusign.png');
+  static AssetImage turing = AssetImage('res/icons/turing.png');
 }
 
 class Images {
@@ -30,4 +36,9 @@ class Images {
   static AssetImage screenshot3 = AssetImage('res/images/screenshot-3.png');
   static AssetImage hackatalk1 = AssetImage('res/images/hackatalk-1.png');
   static AssetImage hackatalk2 = AssetImage('res/images/hackatalk-2.png');
+  static AssetImage geoseong = AssetImage('res/images/geoseong.jpg');
+  static AssetImage huy = AssetImage('res/images/huy.jpg');
+  static AssetImage jeff = AssetImage('res/images/jeff.png');
+  static AssetImage terry = AssetImage('res/images/terry.png');
+  static AssetImage nick = AssetImage('res/images/yongpil.jpg');
 }

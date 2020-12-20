@@ -42,12 +42,13 @@ class PrizeBox extends StatelessWidget {
                   this.label,
                   style: Theme.of(context).textTheme.bodyText1.merge(
                         TextStyle(
+                          fontSize: 20,
                           color: Colors.black,
                         ),
                       ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 30, bottom: 10),
+                  margin: EdgeInsets.only(top: 24, bottom: 10),
                   child: Text(
                     this.title,
                     style: Theme.of(context).textTheme.bodyText1.merge(
@@ -63,6 +64,7 @@ class PrizeBox extends StatelessWidget {
                   this.text,
                   style: Theme.of(context).textTheme.bodyText1.merge(
                         TextStyle(
+                          fontSize: 18,
                           color: Colors.black,
                         ),
                       ),
@@ -100,7 +102,7 @@ class SectionPrize extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 28, bottom: 44),
+                  margin: EdgeInsets.only(top: 38, bottom: 44),
                   child: Text(
                     '총 상금 350만원의 주인공이 되세요!',
                     style: Theme.of(context).textTheme.subtitle2,

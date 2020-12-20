@@ -26,9 +26,57 @@ class SectionPartners extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 28, bottom: 44),
-                  child: Row(
-                    children: [],
+                  margin: EdgeInsets.only(top: 40, bottom: 44),
+                  child: Wrap(
+                    alignment: WrapAlignment.center,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    runSpacing: 28,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(right: 28),
+                        child: Image(
+                          image: Asset.Icons.networkDefines,
+                          height: 48,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 28),
+                        child: Image(
+                          image: Asset.Icons.haii,
+                          height: 48,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 8),
+                        child: Image(
+                          image: Asset.Icons.collectors,
+                          height: 48,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 8),
+                        child: Image(
+                          image: Asset.Icons.modusign,
+                          fit: BoxFit.cover,
+                          height: 56,
+                          width: 300,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 32),
+                        child: Image(
+                          image: Asset.Icons.megazoneCloud,
+                          height: 44,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 28),
+                        child: Image(
+                          image: Asset.Icons.turing,
+                          height: 32,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -39,4 +87,3 @@ class SectionPartners extends StatelessWidget {
     );
   }
 }
-

@@ -52,46 +52,49 @@ class TopMenu extends StatelessWidget {
     return Container(
       height: 140,
       width: double.infinity,
-      child: FittedBox(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Container(
-              height: 44,
-              margin: EdgeInsets.only(left: 72, right: 140),
-              child: Text(
-                'WeHack',
-                style: Theme.of(context).textTheme.headline2,
-                textAlign: TextAlign.center,
-              ),
+      color: Theme.of(context).backgroundColor,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Container(
+            height: 60,
+            margin: EdgeInsets.only(left: 72, right: 140),
+            child: Text(
+              'WeHack',
+              style: Theme.of(context).textTheme.headline2.merge(TextStyle(
+                    fontSize: 48,
+                  )),
+              textAlign: TextAlign.center,
             ),
-            // Container(
-            //   height: 44,
-            //   child: Row(
-            //       children: navMenus
-            //           .map((e) => NavInkText(
-            //                 text: e ?? '',
-            //                 margin: EdgeInsets.only(right: 40),
-            //                 onTap: () => {},
-            //               ))
-            //           .toList()),
-            // ),
-            Container(
-                margin:
-                    EdgeInsets.only(left: 52, right: 28, top: 20, bottom: 20),
-                child: Button(
-                  backgroundColor: Theme.of(context).backgroundColor,
-                  borderColor: Theme.of(context).textTheme.subtitle1.color,
-                  borderWidth: 1,
-                  width: 161,
-                  text: localization.trans('REGISTER'),
-                  textStyle: Theme.of(context).textTheme.caption,
-                  onPress: () => {},
-                ))
-          ],
-        ),
+          ),
+          // Container(
+          //   height: 44,
+          //   child: Row(
+          //       children: navMenus
+          //           .map((e) => NavInkText(
+          //                 text: e ?? '',
+          //                 margin: EdgeInsets.only(right: 40),
+          //                 onTap: () => {},
+          //               ))
+          //           .toList()),
+          // ),
+          Container(
+              margin: EdgeInsets.only(left: 52, right: 28, top: 20, bottom: 20),
+              child: Button(
+                backgroundColor: Theme.of(context).backgroundColor,
+                borderColor: Theme.of(context).textTheme.subtitle1.color,
+                borderWidth: 1,
+                width: 180,
+                height: 60,
+                text: localization.trans('REGISTER'),
+                textStyle: Theme.of(context).textTheme.caption.merge(TextStyle(
+                      fontSize: 20,
+                    )),
+                onPress: () => {},
+              ))
+        ],
       ),
     );
   }

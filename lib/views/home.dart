@@ -18,20 +18,26 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
-      body: Container(
-        child: ListView(
-          children: [
-            TopMenu(),
-            SectionIntro1(),
-            SectionIntro2(),
-            SectionChallenge(),
-            SectionAbout(),
-            SectionPrize(),
-            SectionMentors(),
-            SectionPartners(),
-            SectionHost(),
-          ],
-        ),
+      body: Stack(
+        children: [
+          Positioned(
+              child: ListView(
+            children: [
+              Container(height: 120),
+              SectionIntro1(),
+              SectionIntro2(),
+              SectionChallenge(),
+              SectionAbout(),
+              SectionPrize(),
+              SectionMentors(),
+              SectionPartners(),
+              SectionHost(),
+            ],
+          )),
+          Positioned(
+            child: TopMenu(),
+          ),
+        ],
       ),
     );
   }

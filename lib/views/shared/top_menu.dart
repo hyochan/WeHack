@@ -66,6 +66,7 @@ class TopMenu extends StatelessWidget {
               'WeHack',
               style: Theme.of(context).textTheme.headline2.merge(TextStyle(
                     fontSize: 48,
+                    height: 1.3,
                   )),
               textAlign: TextAlign.center,
             ),

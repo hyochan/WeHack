@@ -23,6 +23,7 @@ class SectionHost extends StatelessWidget {
                   child: Text('Hosted by',
                       style: TextStyle(
                         fontSize: 52,
+                        height: 1.3,
                       )),
                 ),
                 Image(

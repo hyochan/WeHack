@@ -46,6 +46,7 @@ class SectionIntro2 extends StatelessWidget {
                         TextSpan(
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            color: Colors.pinkAccent,
                           ),
                           text: 'no-show를 방지하기 위한 최소 참가비는 3만원입니다. ',
                         ),

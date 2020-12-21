@@ -20,11 +20,13 @@ class SectionHost extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.only(bottom: 40),
-                  child: Text('Hosted by',
-                      style: TextStyle(
-                        fontSize: 52,
-                        height: 1.3,
-                      )),
+                  child: Text(
+                    localization.trans('HOST'),
+                    style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
+                          fontSize: 52,
+                        )),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
                 Image(
                   fit: BoxFit.cover,

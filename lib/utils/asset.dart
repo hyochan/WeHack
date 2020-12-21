@@ -38,6 +38,7 @@ class Images {
   static AssetImage hackatalk2 = AssetImage('res/images/hackatalk-2.png');
   static AssetImage geoseong = AssetImage('res/images/geoseong.jpg');
   static AssetImage huy = AssetImage('res/images/huy.jpg');
+  static AssetImage ji = AssetImage('res/images/ji.png');
   static AssetImage jeff = AssetImage('res/images/jeff.png');
   static AssetImage terry = AssetImage('res/images/terry.png');
   static AssetImage nick = AssetImage('res/images/yongpil.jpg');

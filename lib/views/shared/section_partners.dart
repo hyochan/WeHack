@@ -52,7 +52,7 @@ class SectionPartners extends StatelessWidget {
                         margin: EdgeInsets.only(right: 8),
                         child: Image(
                           image: Asset.Icons.collectors,
-                          height: 48,
+                          height: 40,
                         ),
                       ),
                       Container(
@@ -68,7 +68,7 @@ class SectionPartners extends StatelessWidget {
                         margin: EdgeInsets.only(right: 32),
                         child: Image(
                           image: Asset.Icons.megazoneCloud,
-                          height: 44,
+                          height: 48,
                         ),
                       ),
                       Container(

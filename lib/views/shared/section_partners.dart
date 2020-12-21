@@ -16,7 +16,7 @@ class SectionPartners extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            constraints: BoxConstraints(maxWidth: 1088),
+            constraints: BoxConstraints(maxWidth: 1200),
             margin: EdgeInsets.only(top: 28, bottom: 100),
             child: Column(
               children: [
@@ -37,15 +37,8 @@ class SectionPartners extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(right: 28),
                         child: Image(
-                          image: Asset.Icons.networkDefines,
-                          height: 48,
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 28),
-                        child: Image(
                           image: Asset.Icons.haii,
-                          height: 48,
+                          height: 44,
                         ),
                       ),
                       Container(
@@ -69,6 +62,13 @@ class SectionPartners extends StatelessWidget {
                         child: Image(
                           image: Asset.Icons.megazoneCloud,
                           height: 48,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 28),
+                        child: Image(
+                          image: Asset.Icons.networkDefines,
+                          height: 72,
                         ),
                       ),
                       Container(

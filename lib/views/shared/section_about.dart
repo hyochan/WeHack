@@ -32,7 +32,7 @@ class SectionAbout extends StatelessWidget {
                     textAlign: TextAlign.center,
                     text: TextSpan(
                         text:
-                            'HackaTalk은 dooboolab 커뮤니티에서 개발 한 오픈 소스 채팅 앱입니다.\n\n',
+                            'HackaTalk은 dooboolab 커뮤니티에서 개발한 오픈 소스 채팅 앱입니다.\n\n',
                         style: Theme.of(context).textTheme.subtitle2,
                         children: [
                           TextSpan(

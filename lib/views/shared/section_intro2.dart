@@ -33,7 +33,7 @@ class SectionIntro2 extends StatelessWidget {
                   child: RichText(
                     textAlign: TextAlign.center,
                     text: TextSpan(
-                      text: '첫 한달은 조별로 사람들을 모아서 프로젝트 설명 및 인큐베이팅을 진햅합니다. ',
+                      text: '첫 한달은 조별로 사람들을 모아서 프로젝트 설명 및 인큐베이팅을 진행합니다. ',
                       style: Theme.of(context).textTheme.subtitle2,
                       children: [
                         TextSpan(
@@ -60,7 +60,7 @@ class SectionIntro2 extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16),
-                  child: Text('우승팀은 파트너 후원사들과 네트워킹 기회가 제공됩니다.   ',
+                  child: Text('우승팀은 파트너 후원사들과 네트워킹 기회가 제공됩니다.  ',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

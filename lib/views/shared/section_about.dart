@@ -32,7 +32,7 @@ class SectionAbout extends StatelessWidget {
                     textAlign: TextAlign.center,
                     text: TextSpan(
                         text:
-                            'HackaTalk은 dooboolab 커뮤니티에서 개발한 오픈 소스 채팅 앱입니다.\n\n',
+                            'HackaTalk은 dooboolab 커뮤니티에서 개발한 오픈소스 채팅 앱입니다.\n\n',
                         style: Theme.of(context).textTheme.subtitle2,
                         children: [
                           TextSpan(
@@ -53,7 +53,7 @@ class SectionAbout extends StatelessWidget {
                           ),
                           TextSpan(
                               text:
-                                  '에서 사용할 수 있으며 저희는 더욱 더 많은 사람들과 함께 개발할 수 있는 기회를 가질 수 있기를 희망합니다. 저희는 채팅 앱을 구축하는 것이 오픈소스로서 소통하기 좋은 프로젝트임을 느꼈습니다. 모든 사람이 이미 채팅 앱에 대한 높은 UX를 보유하고 있기 때문입니다. 따라서 아주 기초적인 부분부터 문제 해결을 해나갈 수 있을 것입니다.\n\n평소 채팅 앱에서 구현하고 싶은 기능이 있으셨나요?\nWeHack 에서 함께 만들어나가보세요!')
+                                  '에서 사용할 수 있으며 저희는 더욱 더 많은 사람들과 함께 개발할 수 있는 기회를 가질 수 있기를 희망합니다. 저희는 채팅 앱을 구축하는 것이 오픈소스로서 소통하기 좋은 프로젝트임을 느꼈습니다. 모든 사람이 이미 채팅 앱에 대한 높은 UX를 보유하고 있기 때문입니다. 따라서 아주 기초적인 부분부터 문제 해결을 해나갈 수 있을 것입니다.\n\n평소 채팅 앱에서 구현하고 싶은 기능이 있으셨나요?\nWeHack 에서 함께 만들어 나가보세요!')
                         ]),
                   ),
                 ),

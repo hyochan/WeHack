@@ -60,7 +60,7 @@ class SectionIntro2 extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16),
-                  child: Text('우승팀은 파트너 후원사들과 네트워킹 기회가 제공됩니다.',
+                  child: Text('우승팀은 파트너 후원사들과 네트워킹 기회가 제공됩니다.   ',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

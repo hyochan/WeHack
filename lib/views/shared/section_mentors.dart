@@ -75,7 +75,7 @@ class SectionMentors extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  localization.trans('MENTORS'),
+                  localization.trans('MENTORS') + "  ",
                   style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,
                       )),
@@ -84,7 +84,7 @@ class SectionMentors extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 28, bottom: 52),
                   child: Text(
-                    'WeHack 참가팀들을 위해 현업에 계신 분들이 멘토로 참여하고 있습니다.',
+                    'WeHack 참가팀들을 위해 현업에 계신 분들이 멘토로 참여하고 있습니다.  ',
                     style: Theme.of(context).textTheme.subtitle2,
                     textAlign: TextAlign.center,
                   ),
@@ -96,7 +96,7 @@ class SectionMentors extends StatelessWidget {
                     children: [
                       MentorBox(
                         name: '박태성',
-                        job: '풀스택 개발자',
+                        job: '풀스택 개발자  ',
                         organization: '아이디어샘',
                         image: Asset.Images.geoseong,
                       ),
@@ -126,7 +126,7 @@ class SectionMentors extends StatelessWidget {
                       ),
                       MentorBox(
                         name: '마지연',
-                        job: 'UX 디자이너',
+                        job: 'UX 디자이너  ',
                         organization: '센트비',
                         image: Asset.Images.ji,
                       ),

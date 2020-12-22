@@ -21,7 +21,7 @@ class SectionPartners extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  localization.trans('PARTNERS'),
+                  localization.trans('PARTNERS') + "  ",
                   style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,
                       )),

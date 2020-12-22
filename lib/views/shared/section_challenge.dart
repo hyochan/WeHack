@@ -20,7 +20,7 @@ class SideText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints(maxWidth: 320),
+      constraints: BoxConstraints(maxWidth: 340),
       margin: this.margin,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,7 +76,7 @@ class SectionChallenge extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 28),
                   child: Text(
-                    'HackaTalk을 발전시켜 주세요.',
+                    'HackaTalk을 발전시켜 주세요.  ',
                     style: Theme.of(context).textTheme.subtitle2,
                     textAlign: TextAlign.center,
                   ),
@@ -103,8 +103,8 @@ class SectionChallenge extends StatelessWidget {
                         Column(
                           children: [
                             SideText(
-                              title: 'Github을 통한 오픈소스 프로젝트',
-                              text: '여러 사람들과 함께 커밋을 통해 성장하세요.',
+                              title: 'Github을 통한 오픈소스 프로젝트   ',
+                              text: '여러 사람들과 함께 커밋을 통해 성장하세요.  ',
                               image: Image(
                                 image: Asset.Icons.food,
                                 height: 25.5,

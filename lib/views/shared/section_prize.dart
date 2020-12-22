@@ -104,7 +104,7 @@ class SectionPrize extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 38, bottom: 44),
                   child: Text(
-                    '총 상금 350만원의 주인공이 되세요!',
+                    '총 상금 350만원의 주인공이 되세요!  ',
                     style: Theme.of(context).textTheme.subtitle2,
                     textAlign: TextAlign.center,
                   ),
@@ -119,20 +119,20 @@ class SectionPrize extends StatelessWidget {
                           color: Color.fromARGB(255, 192, 239, 255),
                           label: '1등',
                           title: '200만원',
-                          text: '(1팀 수상)',
+                          text: '(1팀 수상)  ',
                         ),
                         PrizeBox(
                           color: Color.fromARGB(255, 237, 237, 237),
                           label: '2등',
                           title: '100만원',
-                          text: '(1팀 수상)',
+                          text: '(1팀 수상)  ',
                           margin: EdgeInsets.symmetric(horizontal: 33),
                         ),
                         PrizeBox(
                           color: Color.fromARGB(255, 231, 249, 255),
                           label: '3등',
                           title: '50만원',
-                          text: '(1팀 수상)',
+                          text: '(1팀 수상)  ',
                         ),
                       ],
                     ),

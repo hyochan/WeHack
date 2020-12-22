@@ -43,25 +43,18 @@ class TopMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     Localization localization = Localization.of(context);
 
-    List<String> navMenus = [
-      localization.trans('CHALLENGE'),
-      localization.trans('ABOUT'),
-      localization.trans('PRIZES'),
-      localization.trans('TIMELINE'),
-    ];
-
     return Container(
       height: 140,
       width: double.infinity,
       color: Theme.of(context).backgroundColor,
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: [
           Container(
-            height: 60,
-            margin: EdgeInsets.only(left: 72, right: 140),
+            padding: EdgeInsets.only(top: 20, left: 20),
             child: Text(
               'WeHack',
               style: Theme.of(context).textTheme.headline2.merge(TextStyle(
@@ -71,40 +64,29 @@ class TopMenu extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          // Container(
-          //   height: 44,
-          //   child: Row(
-          //       children: navMenus
-          //           .map((e) => NavInkText(
-          //                 text: e ?? '',
-          //                 margin: EdgeInsets.only(right: 40),
-          //                 onTap: () => {},
-          //               ))
-          //           .toList()),
-          // ),
           Container(
-              margin: EdgeInsets.only(left: 52, right: 28, top: 20, bottom: 20),
-              child: Button(
-                backgroundColor: Theme.of(context).backgroundColor,
-                borderColor: Theme.of(context).textTheme.subtitle1.color,
-                borderWidth: 1,
-                width: 180,
-                height: 60,
-                text: localization.trans('REGISTER'),
-                textStyle: Theme.of(context).textTheme.caption.merge(TextStyle(
-                      fontSize: 20,
-                    )),
-                onPress: () => {
-                  Fluttertoast.showToast(
-                      msg: '준비중입니다. 2021년 1월 1일부터 신청 가능합니다.',
-                      toastLength: Toast.LENGTH_SHORT,
-                      gravity: ToastGravity.CENTER,
-                      timeInSecForIosWeb: 1,
-                      backgroundColor: Colors.red,
-                      textColor: Colors.white,
-                      fontSize: 16.0),
-                },
-              ))
+            child: Button(
+              backgroundColor: Theme.of(context).backgroundColor,
+              borderColor: Theme.of(context).textTheme.subtitle1.color,
+              borderWidth: 1,
+              width: 180,
+              height: 60,
+              text: localization.trans('REGISTER'),
+              textStyle: Theme.of(context).textTheme.caption.merge(TextStyle(
+                    fontSize: 20,
+                  )),
+              onPress: () => {
+                Fluttertoast.showToast(
+                    msg: '준비중입니다. 2021년 1월 1일부터 신청 가능합니다.',
+                    toastLength: Toast.LENGTH_SHORT,
+                    gravity: ToastGravity.CENTER,
+                    timeInSecForIosWeb: 1,
+                    backgroundColor: Colors.red,
+                    textColor: Colors.white,
+                    fontSize: 16.0),
+              },
+            ),
+          ),
         ],
       ),
     );

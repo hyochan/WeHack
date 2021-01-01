@@ -5,6 +5,7 @@ import './shared/top_menu.dart' show TopMenu;
 import 'shared/section_intro1.dart' show SectionIntro1;
 import 'shared/section_intro2.dart' show SectionIntro2;
 import 'shared/section_about.dart' show SectionAbout;
+import 'shared/section_eval.dart' show SectionEval;
 import 'shared/section_challenge.dart' show SectionChallenge;
 import 'shared/section_prize.dart' show SectionPrize;
 import 'shared/section_mentors.dart' show SectionMentors;
@@ -29,6 +30,7 @@ class Home extends StatelessWidget {
               SectionChallenge(),
               SectionAbout(),
               SectionPrize(),
+              SectionEval(),
               SectionMentors(),
               SectionPartners(),
               SectionHost(),

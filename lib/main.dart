@@ -23,13 +23,13 @@ class MyApp extends StatelessWidget {
             color: Colors.white,
             fontSize: 114,
             fontFamily: 'Timmana',
-            height: 1.3,
+            height: 1.4,
           ),
           headline2: TextStyle(
             color: Colors.white,
             fontSize: 36,
             fontFamily: 'Timmana',
-            height: 1.3,
+            height: 1.4,
           ),
           caption: TextStyle(
             color: Colors.white,
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
             color: Colors.white,
             fontSize: 24,
             fontFamily: 'NotoSans',
-            height: 1.3,
+            height: 1.4,
           ),
           subtitle2: TextStyle(
             color: Colors.white,

@@ -28,7 +28,7 @@ class SectionIntro1 extends StatelessWidget {
             constraints: BoxConstraints(maxWidth: 460),
             margin: EdgeInsets.only(bottom: 68),
             child: Text(
-              '실리콘벨리 그리고 국내외 스타트업들에서\n가장 핫한 기술 스택을 활용하여 개발한\n채팅 어플리케이션을\n오픈소스를 통해 기여해보세요.',
+              '실리콘벨리 그리고 국내외 스타트업들에서\n가장 핫한 기술 스택을 활용하여 개발한\n채팅 어플리케이션을\n오픈소스를 통해 기여해보세요. ',
               style: Theme.of(context).textTheme.subtitle1,
               textAlign: TextAlign.center,
             ),

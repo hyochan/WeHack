@@ -26,6 +26,12 @@ class Icons {
   static AssetImage megazoneCloud = AssetImage('res/icons/megazone_cloud.png');
   static AssetImage modusign = AssetImage('res/icons/modusign.png');
   static AssetImage turing = AssetImage('res/icons/turing.png');
+  static AssetImage evalThunder = AssetImage('res/icons/eval_thunder.png');
+  static AssetImage evalCode = AssetImage('res/icons/eval_code.png');
+  static AssetImage evalFire = AssetImage('res/icons/eval_fire.png');
+  static AssetImage evalDoc = AssetImage('res/icons/eval_doc.png');
+  static AssetImage evalBulb = AssetImage('res/icons/eval_bulb.png');
+  static AssetImage evalBow = AssetImage('res/icons/eval_bow.png');
 }
 
 class Images {

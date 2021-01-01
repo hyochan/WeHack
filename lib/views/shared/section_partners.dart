@@ -10,7 +10,7 @@ class SectionPartners extends StatelessWidget {
     var localization = Localization.of(context);
 
     return Container(
-      color: Theme.of(context).scaffoldBackgroundColor,
+      color: Theme.of(context).backgroundColor,
       width: double.infinity,
       padding: EdgeInsets.symmetric(vertical: 35, horizontal: 24),
       child: Column(

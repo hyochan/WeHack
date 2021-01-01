@@ -65,44 +65,50 @@ class SectionIntro1 extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Button(
-                  backgroundColor: Theme.of(context).primaryColor,
-                  width: 161,
-                  text: localization.trans('REGISTER'),
-                  textStyle: Theme.of(context).textTheme.caption,
-                  onPress: () {
-                    // Fluttertoast.showToast(
-                    //   msg: '준비중입니다. 2021년 1월 1일부터 신청 가능합니다.',
-                    //   toastLength: Toast.LENGTH_SHORT,
-                    //   gravity: ToastGravity.CENTER,
-                    //   timeInSecForIosWeb: 1,
-                    //   backgroundColor: Colors.red,
-                    //   textColor: Colors.white,
-                    //   fontSize: 16.0,
-                    // ),
-                    General.instance.registerForMenti();
-                  },
+                Expanded(
+                  child: Button(
+                    boxConstraints: BoxConstraints(maxWidth: 180),
+                    backgroundColor: Theme.of(context).primaryColor,
+                    width: 0,
+                    text: localization.trans('REGISTER'),
+                    textStyle: Theme.of(context).textTheme.caption,
+                    onPress: () {
+                      // Fluttertoast.showToast(
+                      //   msg: '준비중입니다. 2021년 1월 1일부터 신청 가능합니다.',
+                      //   toastLength: Toast.LENGTH_SHORT,
+                      //   gravity: ToastGravity.CENTER,
+                      //   timeInSecForIosWeb: 1,
+                      //   backgroundColor: Colors.red,
+                      //   textColor: Colors.white,
+                      //   fontSize: 16.0,
+                      // ),
+                      General.instance.registerForMenti();
+                    },
+                  ),
                 ),
-                Button(
-                  backgroundColor: Theme.of(context).backgroundColor,
-                  borderColor: Theme.of(context).textTheme.subtitle1.color,
-                  borderWidth: 1,
-                  width: 161,
-                  text: localization.trans('APPLY_FOR_MENTOR'),
-                  textStyle: Theme.of(context).textTheme.caption,
-                  onPress: () {
-                    // final Uri uri = Uri(
-                    //   scheme: 'mailto',
-                    //   path: 'hyo@dooboolab.com',
-                    //   queryParameters: {
-                    //     'subject': '멘토 지원',
-                    //     'body': '자유롭게 소개와 함께 멘토로 지원해주세요.',
-                    //   },
-                    // );
+                Expanded(
+                  child: Button(
+                    boxConstraints: BoxConstraints(maxWidth: 180),
+                    backgroundColor: Theme.of(context).backgroundColor,
+                    borderColor: Theme.of(context).textTheme.subtitle1.color,
+                    borderWidth: 1,
+                    width: 0,
+                    text: localization.trans('APPLY_FOR_MENTOR'),
+                    textStyle: Theme.of(context).textTheme.caption,
+                    onPress: () {
+                      // final Uri uri = Uri(
+                      //   scheme: 'mailto',
+                      //   path: 'hyo@dooboolab.com',
+                      //   queryParameters: {
+                      //     'subject': '멘토 지원',
+                      //     'body': '자유롭게 소개와 함께 멘토로 지원해주세요.',
+                      //   },
+                      // );
 
-                    // launch(uri.toString());
-                    General.instance.registerForMentor();
-                  },
+                      // launch(uri.toString());
+                      General.instance.registerForMentor();
+                    },
+                  ),
                 ),
               ],
             ),

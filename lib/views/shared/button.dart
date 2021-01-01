@@ -20,6 +20,7 @@ class Button extends StatelessWidget {
     ),
     this.shapeBorder,
     this.isLoading = false,
+    this.boxConstraints,
   });
 
   final Key key;
@@ -37,11 +38,13 @@ class Button extends StatelessWidget {
   final TextStyle textStyle;
   final ShapeBorder shapeBorder;
   final bool isLoading;
+  final BoxConstraints boxConstraints;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       key: this.key,
+      constraints: this.boxConstraints,
       child: FlatButton(
         shape: shapeBorder,
         padding: EdgeInsets.all(0.0),

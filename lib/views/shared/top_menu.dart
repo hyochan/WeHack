@@ -54,19 +54,26 @@ class TopMenu extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: [
-          Container(
-            padding: EdgeInsets.only(top: 20, left: 20),
-            child: Text(
-              'WeHack',
-              style: Theme.of(context).textTheme.headline2.merge(TextStyle(
-                    fontSize: 48,
-                    height: 1.3,
-                  )),
-              textAlign: TextAlign.center,
+          Flexible(
+            child: Container(
+              constraints: BoxConstraints(maxWidth: 180),
+              padding: EdgeInsets.only(top: 20, left: 20),
+              child: FittedBox(
+                fit: BoxFit.fitWidth,
+                child: Text(
+                  'WeHack',
+                  style: Theme.of(context).textTheme.headline2.merge(TextStyle(
+                        fontSize: 48,
+                        height: 1.3,
+                      )),
+                  textAlign: TextAlign.center,
+                ),
+              ),
             ),
           ),
-          Container(
+          Flexible(
             child: Button(
+              boxConstraints: BoxConstraints(maxWidth: 180),
               backgroundColor: Theme.of(context).backgroundColor,
               borderColor: Theme.of(context).textTheme.subtitle1.color,
               borderWidth: 1,

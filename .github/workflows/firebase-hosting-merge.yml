@@ -22,7 +22,7 @@ jobs:
       run: flutter config --enable-web
 
     - name: Build web
-      run: flutter build web --release --dart-define=FLUTTER_WEB_USE_SKIA=true
+      run: flutter build web --release
 
     - name: Deploy to firebase
       uses: FirebaseExtended/action-hosting-deploy@v0

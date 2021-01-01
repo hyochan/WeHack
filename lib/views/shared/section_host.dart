@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:wehack/utils/general.dart';
 import 'package:wehack/utils/localization.dart' show Localization;
 import 'package:wehack/utils/asset.dart' as Asset;
+import 'package:wehack/views/shared/button.dart';
 
 class SectionHost extends StatelessWidget {
   @override
@@ -8,7 +10,7 @@ class SectionHost extends StatelessWidget {
     var localization = Localization.of(context);
 
     return Container(
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).scaffoldBackgroundColor,
       width: double.infinity,
       padding: EdgeInsets.symmetric(vertical: 35, horizontal: 24),
       child: Column(
@@ -28,10 +30,13 @@ class SectionHost extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                Image(
-                  fit: BoxFit.cover,
-                  image: Asset.Images.dooboolab,
-                  height: 440,
+                Material(
+                  // needed
+                  color: Colors.transparent,
+                  child: InkWell(
+                    onTap: () => General.instance.goToGithub(),
+                    child: Image(image:Asset.Images.dooboolab),
+                  ),
                 ),
               ],
             ),

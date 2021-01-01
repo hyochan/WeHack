@@ -56,4 +56,8 @@ class General {
   void registerForMentor() {
     launch('https://forms.gle/VGJpemvKqRmmZWEc9');
   }
+
+  void goToGithub() {
+    launch('https://github.com/dooboolab');
+  }
 }

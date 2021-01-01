@@ -8,6 +8,7 @@ class PrizeBox extends StatelessWidget {
   final String title;
   final String text;
   final Color color;
+  final AssetImage prizeImage;
   final EdgeInsets margin;
 
   const PrizeBox({
@@ -16,6 +17,7 @@ class PrizeBox extends StatelessWidget {
     @required this.title,
     @required this.text,
     @required this.color,
+    @required this.prizeImage,
     this.margin,
   });
 
@@ -29,7 +31,8 @@ class PrizeBox extends StatelessWidget {
         children: [
           Container(
             width: 401,
-            height: 300,
+            // height: 300,
+            padding: EdgeInsets.only(top: 60, bottom: 20),
             decoration: BoxDecoration(
               color: this.color,
               borderRadius: BorderRadius.all(Radius.circular(50)),
@@ -43,7 +46,7 @@ class PrizeBox extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyText1.merge(
                         TextStyle(
                           fontSize: 20,
-                          color: Colors.black,
+                          color: Color(0xFF5C5C5C),
                         ),
                       ),
                 ),
@@ -54,7 +57,7 @@ class PrizeBox extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyText1.merge(
                           TextStyle(
                             fontSize: 64,
-                            color: Color.fromARGB(255, 92, 92, 92),
+                            color: Color(0xFF5C5C5C),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -68,6 +71,14 @@ class PrizeBox extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 20),
+                  child: Image(
+                    image: this.prizeImage,
+                    width: 160,
+                    height: 160,
+                  ),
                 ),
               ],
             ),
@@ -116,12 +127,14 @@ class SectionPrize extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         PrizeBox(
+                          prizeImage: Asset.Icons.prizeGold,
                           color: Color.fromARGB(255, 192, 239, 255),
                           label: '1등',
                           title: '200만원',
                           text: '(1팀 수상) ',
                         ),
                         PrizeBox(
+                          prizeImage: Asset.Icons.prizeSilver,
                           color: Color.fromARGB(255, 237, 237, 237),
                           label: '2등',
                           title: '100만원',
@@ -129,6 +142,7 @@ class SectionPrize extends StatelessWidget {
                           margin: EdgeInsets.symmetric(horizontal: 33),
                         ),
                         PrizeBox(
+                          prizeImage: Asset.Icons.prizeBronze,
                           color: Color.fromARGB(255, 231, 249, 255),
                           label: '3등',
                           title: '50만원',

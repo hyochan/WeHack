@@ -32,6 +32,9 @@ class Icons {
   static AssetImage evalDoc = AssetImage('res/icons/eval_doc.png');
   static AssetImage evalBulb = AssetImage('res/icons/eval_bulb.png');
   static AssetImage evalBow = AssetImage('res/icons/eval_bow.png');
+  static AssetImage prizeGold = AssetImage('res/icons/prize_gold.png');
+  static AssetImage prizeSilver = AssetImage('res/icons/prize_silver.png');
+  static AssetImage prizeBronze = AssetImage('res/icons/prize_bronze.png');
 }
 
 class Images {

@@ -51,5 +51,7 @@ class Images {
   static AssetImage jeff = AssetImage('res/images/jeff.png');
   static AssetImage terry = AssetImage('res/images/terry.png');
   static AssetImage nick = AssetImage('res/images/yongpil.jpg');
+  static AssetImage danny = AssetImage('res/images/danny.jpg');
   static AssetImage dooboolab = AssetImage('res/images/dooboolab.png');
+
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wehack/utils/localization.dart' show Localization;
 import 'package:wehack/views/shared/button.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:wehack/utils/general.dart' show General;
 
 class NavInkText extends StatelessWidget {
   final Key key;
@@ -75,15 +76,16 @@ class TopMenu extends StatelessWidget {
               textStyle: Theme.of(context).textTheme.caption.merge(TextStyle(
                     fontSize: 20,
                   )),
-              onPress: () => {
-                Fluttertoast.showToast(
-                    msg: '준비중입니다. 2021년 1월 1일부터 신청 가능합니다.',
-                    toastLength: Toast.LENGTH_SHORT,
-                    gravity: ToastGravity.CENTER,
-                    timeInSecForIosWeb: 1,
-                    backgroundColor: Colors.red,
-                    textColor: Colors.white,
-                    fontSize: 16.0),
+              onPress: () {
+                // Fluttertoast.showToast(
+                //     msg: '준비중입니다. 2021년 1월 1일부터 신청 가능합니다.',
+                //     toastLength: Toast.LENGTH_SHORT,
+                //     gravity: ToastGravity.CENTER,
+                //     timeInSecForIosWeb: 1,
+                //     backgroundColor: Colors.red,
+                //     textColor: Colors.white,
+                //     fontSize: 16.0),
+                General.instance.registerForMenti();
               },
             ),
           ),

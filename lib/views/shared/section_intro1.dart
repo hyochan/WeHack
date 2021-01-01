@@ -4,6 +4,7 @@ import 'package:wehack/utils/localization.dart' show Localization;
 import 'package:wehack/views/shared/button.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:wehack/utils/general.dart' show General;
 
 class SectionIntro1 extends StatelessWidget {
   @override
@@ -69,16 +70,17 @@ class SectionIntro1 extends StatelessWidget {
                   width: 161,
                   text: localization.trans('REGISTER'),
                   textStyle: Theme.of(context).textTheme.caption,
-                  onPress: () => {
-                    Fluttertoast.showToast(
-                      msg: '준비중입니다. 2021년 1월 1일부터 신청 가능합니다.',
-                      toastLength: Toast.LENGTH_SHORT,
-                      gravity: ToastGravity.CENTER,
-                      timeInSecForIosWeb: 1,
-                      backgroundColor: Colors.red,
-                      textColor: Colors.white,
-                      fontSize: 16.0,
-                    ),
+                  onPress: () {
+                    // Fluttertoast.showToast(
+                    //   msg: '준비중입니다. 2021년 1월 1일부터 신청 가능합니다.',
+                    //   toastLength: Toast.LENGTH_SHORT,
+                    //   gravity: ToastGravity.CENTER,
+                    //   timeInSecForIosWeb: 1,
+                    //   backgroundColor: Colors.red,
+                    //   textColor: Colors.white,
+                    //   fontSize: 16.0,
+                    // ),
+                    General.instance.registerForMenti();
                   },
                 ),
                 Button(
@@ -89,16 +91,17 @@ class SectionIntro1 extends StatelessWidget {
                   text: localization.trans('APPLY_FOR_MENTOR'),
                   textStyle: Theme.of(context).textTheme.caption,
                   onPress: () {
-                    final Uri uri = Uri(
-                      scheme: 'mailto',
-                      path: 'hyo@dooboolab.com',
-                      queryParameters: {
-                        'subject': '멘토 지원',
-                        'body': '자유롭게 소개와 함께 멘토로 지원해주세요.',
-                      },
-                    );
+                    // final Uri uri = Uri(
+                    //   scheme: 'mailto',
+                    //   path: 'hyo@dooboolab.com',
+                    //   queryParameters: {
+                    //     'subject': '멘토 지원',
+                    //     'body': '자유롭게 소개와 함께 멘토로 지원해주세요.',
+                    //   },
+                    // );
 
-                    launch(uri.toString());
+                    // launch(uri.toString());
+                    General.instance.registerForMentor();
                   },
                 ),
               ],

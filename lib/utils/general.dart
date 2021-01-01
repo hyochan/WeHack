@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:async';
 import 'dart:math' as Math;
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../utils/localization.dart';
 import '../views/shared/dialog_spinner.dart';
@@ -46,5 +47,13 @@ class General {
             text: str != null ? str : Localization.of(context).trans('LOADING'),
           );
         });
+  }
+
+  void registerForMenti() {
+    launch('https://forms.gle/GhvRHvaeEvNhnUPL8');
+  }
+
+  void registerForMentor() {
+    launch('https://forms.gle/VGJpemvKqRmmZWEc9');
   }
 }

@@ -95,23 +95,23 @@ class SectionEval extends StatelessWidget {
               ),
               EvalBox(
                 icon: Asset.Icons.evalFire,
-                title: '3. 열정',
+                title: '3. 열정 ',
                 content: '얼마나 프로젝트에 애착을 가졌나요? 증명이 어떻게 되었나요? ',
               ),
               EvalBox(
                 icon: Asset.Icons.evalDoc,
-                title: '4. 팀워크',
+                title: '4. 팀워크 ',
                 content: '다 함께 같이 가고 있나요? ',
               ),
               EvalBox(
                 icon: Asset.Icons.evalBulb,
-                title: '5. 아이디어',
+                title: '5. 아이디어 ',
                 content: '확기적인 아이디어인가요? ',
               ),
               EvalBox(
                 icon: Asset.Icons.evalBow,
-                title: '6. 장인정신',
-                content: '한땀 한땀 다양한 상황에 대한 고려가 있었나요? ',
+                title: '6. 장인정신 ',
+                content: '한땀 한땀 다양한 상황에 대한 고려가 있었나요?  ',
               ),
             ],
           )

@@ -64,7 +64,7 @@ class SectionEval extends StatelessWidget {
     return Container(
       color: Theme.of(context).backgroundColor,
       width: double.infinity,
-      padding: EdgeInsets.only(top: 68, bottom: 117, left: 32, right: 32),
+      padding: EdgeInsets.only(top: 68, bottom: 117, left: 24, right: 24),
       constraints: BoxConstraints(maxWidth: 835),
       child: Column(
         children: [

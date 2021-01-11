@@ -22,6 +22,9 @@ class Home extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
+            Positioned(
+              child: TopMenu(),
+            ),
             Container(
                 child: ListView(
               children: [
@@ -37,9 +40,6 @@ class Home extends StatelessWidget {
                 SectionHost(),
               ],
             )),
-            Positioned(
-              child: TopMenu(),
-            ),
           ],
         ),
       ),

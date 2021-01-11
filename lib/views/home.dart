@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(
+            Container(
                 child: ListView(
               children: [
                 Container(height: 120),

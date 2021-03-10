@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wehack/utils/localization.dart' show Localization;
 import 'package:wehack/views/shared/button.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:wehack/utils/general.dart' show General;
 
 class NavInkText extends StatelessWidget {

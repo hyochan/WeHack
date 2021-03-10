@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:wehack/utils/localization.dart' show Localization;
 import 'package:wehack/utils/asset.dart' as Asset;
 
 class SectionIntro2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var localization = Localization.of(context);
-
     return Container(
       width: double.infinity,
       padding: EdgeInsets.symmetric(vertical: 35, horizontal: 24),

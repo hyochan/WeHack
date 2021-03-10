@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../utils/general.dart';
 import './shared/top_menu.dart' show TopMenu;
 import 'shared/section_intro1.dart' show SectionIntro1;
 import 'shared/section_intro2.dart' show SectionIntro2;
@@ -22,9 +21,6 @@ class Home extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(
-              child: TopMenu(),
-            ),
             Container(
                 child: ListView(
               children: [
@@ -40,6 +36,9 @@ class Home extends StatelessWidget {
                 SectionHost(),
               ],
             )),
+            Positioned(
+              child: TopMenu(),
+            ),
           ],
         ),
       ),

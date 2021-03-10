@@ -2,8 +2,6 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:wehack/utils/localization.dart' show Localization;
 import 'package:wehack/views/shared/button.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:wehack/utils/general.dart' show General;
 
 class SectionIntro1 extends StatelessWidget {
@@ -37,7 +35,7 @@ class SectionIntro1 extends StatelessWidget {
             child: Column(
               children: [
                 Text('참가신청', style: Theme.of(context).textTheme.subtitle1),
-                Text('~ 4월 9일', style: Theme.of(context).textTheme.subtitle2),
+                Text('~ 6월 11일', style: Theme.of(context).textTheme.subtitle2),
               ],
             ),
           ),
@@ -46,7 +44,7 @@ class SectionIntro1 extends StatelessWidget {
             child: Column(
               children: [
                 Text('행사기간', style: Theme.of(context).textTheme.subtitle1),
-                Text('4월 30일 ~ 7월 30일',
+                Text('6월 30일 ~ 9월 30일',
                     style: Theme.of(context).textTheme.subtitle2),
               ],
             ),
@@ -56,7 +54,7 @@ class SectionIntro1 extends StatelessWidget {
             child: Column(
               children: [
                 Text('심사발표', style: Theme.of(context).textTheme.subtitle1),
-                Text('8월 23일', style: Theme.of(context).textTheme.subtitle2),
+                Text('10월 15일', style: Theme.of(context).textTheme.subtitle2),
               ],
             ),
           ),

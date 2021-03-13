@@ -20,7 +20,8 @@ class Icons {
   static AssetImage food = AssetImage('res/icons/food.png');
   static AssetImage ribbon = AssetImage('res/icons/ribbon.png');
   static AssetImage skull = AssetImage('res/icons/skull.png');
-  static AssetImage networkDefines = AssetImage('res/icons/network_defines.png');
+  static AssetImage networkDefines =
+      AssetImage('res/icons/network_defines.png');
   static AssetImage collectors = AssetImage('res/icons/collectors.png');
   static AssetImage haii = AssetImage('res/icons/haii.png');
   static AssetImage megazoneCloud = AssetImage('res/icons/megazone_cloud.png');
@@ -52,6 +53,6 @@ class Images {
   static AssetImage terry = AssetImage('res/images/terry.png');
   static AssetImage nick = AssetImage('res/images/yongpil.jpg');
   static AssetImage danny = AssetImage('res/images/danny.jpg');
+  static AssetImage sunhyung = AssetImage('res/images/sunhyung.jpg');
   static AssetImage dooboolab = AssetImage('res/images/dooboolab.png');
-
 }

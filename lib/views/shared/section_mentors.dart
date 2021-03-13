@@ -136,6 +136,12 @@ class SectionMentors extends StatelessWidget {
                         organization: '두부랩',
                         image: Asset.Images.danny,
                       ),
+                      MentorBox(
+                        name: '김선형',
+                        job: 'CTO',
+                        organization: '티클',
+                        image: Asset.Images.sunhyung,
+                      ),
                     ],
                   ),
                 ),

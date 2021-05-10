@@ -26,7 +26,7 @@ class SectionIntro1 extends StatelessWidget {
             constraints: BoxConstraints(maxWidth: 460),
             margin: EdgeInsets.only(bottom: 68),
             child: Text(
-              '실리콘벨리 그리고 국내외 스타트업들에서\n가장 핫한 기술 스택을 활용하여 개발한\n채팅 어플리케이션을\n오픈소스를 통해 기여해보세요. ',
+              '실리콘벨리 그리고 국내외 스타트업들에서\n가장 핫한 기술 스택을 활용하여 개발한\n채팅 어플리케이션을\n오픈소스를 통해 기여해보세요.\n해외 유명 기업 Prisma 팀에서 저희와 함께 오프닝을 진행하고 조언을 줄 예정입니다.',
               style: Theme.of(context).textTheme.subtitle1,
               textAlign: TextAlign.center,
             ),
@@ -44,7 +44,7 @@ class SectionIntro1 extends StatelessWidget {
             child: Column(
               children: [
                 Text('행사기간', style: Theme.of(context).textTheme.subtitle1),
-                Text('6월 30일 ~ 9월 30일',
+                Text('7월 1일 ~ 9월 30일',
                     style: Theme.of(context).textTheme.subtitle2),
               ],
             ),

@@ -1,5 +1,6 @@
 import 'dart:core';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:wehack/utils/localization.dart' show Localization;
 import 'package:wehack/views/shared/button.dart';
 import 'package:wehack/utils/general.dart' show General;
@@ -15,11 +16,22 @@ class SectionIntro1 extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 50, bottom: 17),
+            margin: EdgeInsets.only(top: 50),
             child: Text(
               'WeHack 2021',
               style: Theme.of(context).textTheme.headline1,
               textAlign: TextAlign.center,
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(bottom: 40),
+            child: InkWell(
+              onTap: () => launch('https://prisma.io'),
+              child: Text(
+                'with Prisma 🧡',
+                style: Theme.of(context).textTheme.headline2,
+                textAlign: TextAlign.center,
+              ),
             ),
           ),
           Container(

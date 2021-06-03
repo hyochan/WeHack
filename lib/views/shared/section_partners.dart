@@ -72,17 +72,24 @@ class SectionPartners extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 28),
+                        margin: EdgeInsets.only(right: 32),
                         child: Image(
                           image: Asset.Icons.vntg,
                           height: 48,
                         ),
                       ),
                       Container(
+                        margin: EdgeInsets.only(right: 32),
+                        child: Image(
+                          image: Asset.Icons.artifacts,
+                          height: 44,
+                        ),
+                      ),
+                      Container(
                         margin: EdgeInsets.only(right: 28),
                         child: Image(
                           image: Asset.Icons.turing,
-                          height: 32,
+                          height: 30,
                         ),
                       ),
                     ],

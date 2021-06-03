@@ -35,17 +35,17 @@ class SectionPartners extends StatelessWidget {
                     runSpacing: 28,
                     children: [
                       Container(
-                        margin: EdgeInsets.only(right: 28),
+                        margin: EdgeInsets.only(right: 24),
                         child: Image(
-                          image: Asset.Icons.haii,
-                          height: 44,
+                          image: Asset.Icons.networkDefines,
+                          height: 72,
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 8),
+                        margin: EdgeInsets.only(right: 24),
                         child: Image(
-                          image: Asset.Icons.collectors,
-                          height: 40,
+                          image: Asset.Icons.haii,
+                          height: 44,
                         ),
                       ),
                       Container(
@@ -60,29 +60,29 @@ class SectionPartners extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(right: 32),
                         child: Image(
-                          image: Asset.Icons.megazoneCloud,
-                          height: 48,
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 28),
-                        child: Image(
-                          image: Asset.Icons.networkDefines,
-                          height: 72,
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 32),
-                        child: Image(
                           image: Asset.Icons.vntg,
                           height: 48,
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 32),
+                        margin: EdgeInsets.only(right: 40),
                         child: Image(
                           image: Asset.Icons.artifacts,
-                          height: 44,
+                          height: 48,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 40),
+                        child: Image(
+                          image: Asset.Icons.collectors,
+                          height: 32,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 40),
+                        child: Image(
+                          image: Asset.Icons.megazoneCloud,
+                          height: 48,
                         ),
                       ),
                       Container(

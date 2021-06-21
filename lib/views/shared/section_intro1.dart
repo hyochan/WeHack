@@ -47,7 +47,7 @@ class SectionIntro1 extends StatelessWidget {
             child: Column(
               children: [
                 Text('참가신청', style: Theme.of(context).textTheme.subtitle1),
-                Text('~ 6월 20일', style: Theme.of(context).textTheme.subtitle2),
+                Text('~ 6월 25일', style: Theme.of(context).textTheme.subtitle2),
               ],
             ),
           ),
@@ -56,7 +56,7 @@ class SectionIntro1 extends StatelessWidget {
             child: Column(
               children: [
                 Text('행사기간', style: Theme.of(context).textTheme.subtitle1),
-                Text('7월 1일 ~ 9월 30일',
+                Text('7월 1일 ~ 10월 8일',
                     style: Theme.of(context).textTheme.subtitle2),
               ],
             ),

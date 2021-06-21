@@ -28,6 +28,7 @@ class Icons {
   static AssetImage modusign = AssetImage('res/icons/modusign.png');
   static AssetImage artifacts = AssetImage('res/icons/artifacts.png');
   static AssetImage vntg = AssetImage('res/icons/vntg.png');
+  static AssetImage twosun = AssetImage('res/icons/twosun.png');
   static AssetImage turing = AssetImage('res/icons/turing.png');
   static AssetImage evalThunder = AssetImage('res/icons/eval_thunder.png');
   static AssetImage evalCode = AssetImage('res/icons/eval_code.png');

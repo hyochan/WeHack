@@ -36,7 +36,7 @@ class EvalBox extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.only(left: 10),
-                child: Text(
+                child: SelectableText(
                   this.title,
                   style: Theme.of(context).textTheme.subtitle1,
                 ),
@@ -45,7 +45,7 @@ class EvalBox extends StatelessWidget {
           ),
           Container(
             margin: EdgeInsets.only(top: 18),
-            child: Text(
+            child: SelectableText(
               this.content,
               style: Theme.of(context).textTheme.bodyText1,
             ),
@@ -69,7 +69,7 @@ class SectionEval extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            child: Text(
+            child: SelectableText(
               Localization.of(context).trans('EVALUATION') + ' ',
               style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                     fontSize: 52,
@@ -91,7 +91,8 @@ class SectionEval extends StatelessWidget {
               EvalBox(
                 icon: Asset.Icons.evalCode,
                 title: '2. 코드품질 ',
-                content: '읽기 편하고 테스트 커버리지가 높은가요? 돌아가기만 하는 코드가 아닌 확장성 등이 고려되었나요? ',
+                content:
+                    '읽기 편하고 테스트 커버리지가 높은가요? 돌아가기만 하는 코드가 아닌 확장성 등이 고려되었나요? ',
               ),
               EvalBox(
                 icon: Asset.Icons.evalFire,

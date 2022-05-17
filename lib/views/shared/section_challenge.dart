@@ -33,12 +33,13 @@ class SideText extends StatelessWidget {
                   margin: EdgeInsets.only(right: 10),
                   child: this.image,
                 ),
-                Text(this.title, style: Theme.of(context).textTheme.bodyText1),
+                SelectableText(this.title,
+                    style: Theme.of(context).textTheme.bodyText1),
               ],
             ),
           ),
           Wrap(children: [
-            Text(
+            SelectableText(
               this.text,
               textAlign: TextAlign.start,
               style: Theme.of(context).textTheme.bodyText2,
@@ -66,7 +67,7 @@ class SectionChallenge extends StatelessWidget {
             margin: EdgeInsets.only(top: 28, bottom: 100),
             child: Column(
               children: [
-                Text(
+                SelectableText(
                   localization.trans('CHALLENGE'),
                   style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,
@@ -75,7 +76,7 @@ class SectionChallenge extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 28),
-                  child: Text(
+                  child: SelectableText(
                     'HackaTalk을 발전시켜 주세요. ',
                     style: Theme.of(context).textTheme.subtitle2,
                     textAlign: TextAlign.center,

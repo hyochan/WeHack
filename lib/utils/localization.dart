@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class Localization {
-  Localization(this.locale, {
+  Localization(
+    this.locale, {
     this.isTest = false,
   });
   final Locale locale;
@@ -21,8 +22,8 @@ class Localization {
   }
 
   Future<Localization> load() async {
-    String data = await rootBundle
-        .loadString('res/langs/${locale.languageCode}.json');
+    String data =
+        await rootBundle.loadString('res/langs/${locale.languageCode}.json');
 
     Map<String, dynamic> _result = json.decode(data);
     _sentences = new Map();
@@ -31,7 +32,6 @@ class Localization {
     });
     return Localization(locale);
   }
-
 
   String trans(String key) {
     if (isTest) return key;
@@ -52,7 +52,8 @@ class LocalizationDelegate extends LocalizationsDelegate<Localization> {
   final bool isTest;
 
   @override
-  bool isSupported(Locale locale) => supportedLocales.contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      supportedLocales.contains(locale.languageCode);
 
   @override
   Future<Localization> load(Locale locale) async {

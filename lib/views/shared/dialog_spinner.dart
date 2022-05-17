@@ -26,7 +26,7 @@ class DialogSpinner extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.only(left: 30.0),
-              child: Text(
+              child: SelectableText(
                 text,
                 style: this.txtStyle,
               ),

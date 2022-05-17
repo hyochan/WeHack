@@ -22,11 +22,12 @@ class SectionHost extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.only(bottom: 40),
-                  child: Text(
+                  child: SelectableText(
                     localization.trans('HOST'),
-                    style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
-                          fontSize: 52,
-                        )),
+                    style:
+                        Theme.of(context).textTheme.subtitle1.merge(TextStyle(
+                              fontSize: 52,
+                            )),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -35,7 +36,7 @@ class SectionHost extends StatelessWidget {
                   color: Colors.transparent,
                   child: InkWell(
                     onTap: () => General.instance.goToGithub(),
-                    child: Image(image:Asset.Images.dooboolab),
+                    child: Image(image: Asset.Images.dooboolab),
                   ),
                 ),
               ],

@@ -18,7 +18,6 @@ class Button extends StatelessWidget {
     this.textStyle = const TextStyle(
       color: Colors.black12,
     ),
-    this.shapeBorder,
     this.isLoading = false,
     this.boxConstraints,
   });
@@ -36,7 +35,6 @@ class Button extends StatelessWidget {
   final double borderRadius;
   final Color borderColor;
   final TextStyle textStyle;
-  final ShapeBorder shapeBorder;
   final bool isLoading;
   final BoxConstraints boxConstraints;
 
@@ -45,9 +43,7 @@ class Button extends StatelessWidget {
     return Container(
       key: this.key,
       constraints: this.boxConstraints,
-      child: FlatButton(
-        shape: shapeBorder,
-        padding: EdgeInsets.all(0.0),
+      child: TextButton(
         child: isLoading
             ? CircularProgressIndicator(
                 semanticsLabel: Localization.of(context).trans('LOADING'),
@@ -66,7 +62,7 @@ class Button extends StatelessWidget {
                     margin:
                         this.image == null ? null : EdgeInsets.only(left: 12),
                     child: Center(
-                      child: Text(
+                      child: SelectableText(
                         text,
                         style: textStyle,
                       ),

@@ -37,18 +37,18 @@ class MentorBox extends StatelessWidget {
               ),
             ),
           ),
-          Text(this.name,
+          SelectableText(this.name,
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               )),
           Container(
               margin: EdgeInsets.symmetric(vertical: 2),
-              child: Text(this.job,
+              child: SelectableText(this.job,
                   style: TextStyle(
                     fontSize: 14,
                   ))),
-          Text(this.organization,
+          SelectableText(this.organization,
               style: TextStyle(
                 fontSize: 14,
               )),
@@ -74,7 +74,7 @@ class SectionMentors extends StatelessWidget {
             margin: EdgeInsets.only(top: 28, bottom: 100),
             child: Column(
               children: [
-                Text(
+                SelectableText(
                   localization.trans('MENTORS') + "  ",
                   style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,
@@ -83,7 +83,7 @@ class SectionMentors extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 28, bottom: 52),
-                  child: Text(
+                  child: SelectableText(
                     'WeHack 참가팀들을 위해 현업에 계신 분들이 멘토로 참여하고 있습니다. ',
                     style: Theme.of(context).textTheme.subtitle2,
                     textAlign: TextAlign.center,

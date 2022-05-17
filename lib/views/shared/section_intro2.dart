@@ -18,7 +18,7 @@ class SectionIntro2 extends StatelessWidget {
             margin: EdgeInsets.only(top: 115, bottom: 96),
             child: Column(
               children: [
-                Text(
+                SelectableText(
                   'WeHack은 어떻게 진행되나요?',
                   style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,
@@ -58,7 +58,7 @@ class SectionIntro2 extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16),
-                  child: Text('우승팀은 파트너 후원사들과 네트워킹 기회가 제공됩니다.  ',
+                  child: SelectableText('우승팀은 파트너 후원사들과 네트워킹 기회가 제공됩니다.  ',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

@@ -17,7 +17,7 @@ class SectionIntro1 extends StatelessWidget {
         children: [
           Container(
             margin: EdgeInsets.only(top: 50),
-            child: Text(
+            child: SelectableText(
               'WeHack 2021',
               style: Theme.of(context).textTheme.headline1,
               textAlign: TextAlign.center,
@@ -27,7 +27,7 @@ class SectionIntro1 extends StatelessWidget {
             margin: EdgeInsets.only(bottom: 40),
             child: InkWell(
               onTap: () => launch('https://prisma.io'),
-              child: Text(
+              child: SelectableText(
                 'with Prisma 🧡',
                 style: Theme.of(context).textTheme.headline2,
                 textAlign: TextAlign.center,
@@ -37,7 +37,7 @@ class SectionIntro1 extends StatelessWidget {
           Container(
             constraints: BoxConstraints(maxWidth: 460),
             margin: EdgeInsets.only(bottom: 68),
-            child: Text(
+            child: SelectableText(
               '실리콘벨리 그리고 국내외 스타트업들에서\n가장 핫한 기술 스택을 활용하여 개발한\n채팅 어플리케이션을\n오픈소스를 통해 기여해보세요.\n해외 유명 기업 Prisma 팀에서 저희와 함께 오프닝을 진행하고 조언을 줄 예정입니다.',
               style: Theme.of(context).textTheme.subtitle1,
               textAlign: TextAlign.center,
@@ -46,8 +46,10 @@ class SectionIntro1 extends StatelessWidget {
           Container(
             child: Column(
               children: [
-                Text('참가신청', style: Theme.of(context).textTheme.subtitle1),
-                Text('~ 6월 25일', style: Theme.of(context).textTheme.subtitle2),
+                SelectableText('참가신청',
+                    style: Theme.of(context).textTheme.subtitle1),
+                SelectableText('~ 6월 25일',
+                    style: Theme.of(context).textTheme.subtitle2),
               ],
             ),
           ),
@@ -55,8 +57,9 @@ class SectionIntro1 extends StatelessWidget {
             margin: EdgeInsets.only(top: 48),
             child: Column(
               children: [
-                Text('행사기간', style: Theme.of(context).textTheme.subtitle1),
-                Text('7월 1일 ~ 10월 17일',
+                SelectableText('행사기간',
+                    style: Theme.of(context).textTheme.subtitle1),
+                SelectableText('7월 1일 ~ 10월 17일',
                     style: Theme.of(context).textTheme.subtitle2),
               ],
             ),
@@ -65,8 +68,10 @@ class SectionIntro1 extends StatelessWidget {
             margin: EdgeInsets.only(top: 48, bottom: 85),
             child: Column(
               children: [
-                Text('심사 발표 및 시상', style: Theme.of(context).textTheme.subtitle1),
-                Text('11월 초', style: Theme.of(context).textTheme.subtitle2),
+                SelectableText('심사 발표 및 시상',
+                    style: Theme.of(context).textTheme.subtitle1),
+                SelectableText('11월 초',
+                    style: Theme.of(context).textTheme.subtitle2),
               ],
             ),
           ),

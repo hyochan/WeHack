@@ -41,7 +41,7 @@ class PrizeBox extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                SelectableText(
                   this.label,
                   style: Theme.of(context).textTheme.bodyText1.merge(
                         TextStyle(
@@ -52,7 +52,7 @@ class PrizeBox extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 24, bottom: 10),
-                  child: Text(
+                  child: SelectableText(
                     this.title,
                     style: Theme.of(context).textTheme.bodyText1.merge(
                           TextStyle(
@@ -63,7 +63,7 @@ class PrizeBox extends StatelessWidget {
                         ),
                   ),
                 ),
-                Text(
+                SelectableText(
                   this.text,
                   style: Theme.of(context).textTheme.bodyText1.merge(
                         TextStyle(
@@ -105,7 +105,7 @@ class SectionPrize extends StatelessWidget {
             margin: EdgeInsets.only(top: 28, bottom: 100),
             child: Column(
               children: [
-                Text(
+                SelectableText(
                   localization.trans('PRIZE'),
                   style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,
@@ -114,7 +114,7 @@ class SectionPrize extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 38, bottom: 44),
-                  child: Text(
+                  child: SelectableText(
                     '총 상금 350만원의 주인공이 되세요! ',
                     style: Theme.of(context).textTheme.subtitle2,
                     textAlign: TextAlign.center,

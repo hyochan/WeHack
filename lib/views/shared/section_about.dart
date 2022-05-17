@@ -19,7 +19,7 @@ class SectionAbout extends StatelessWidget {
             margin: EdgeInsets.only(top: 115, bottom: 150),
             child: Column(
               children: [
-                Text(
+                SelectableText(
                   'HackaTalk은 어떤 프로젝트인가요?',
                   style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,

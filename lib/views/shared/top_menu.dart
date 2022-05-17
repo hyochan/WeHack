@@ -26,7 +26,7 @@ class NavInkText extends StatelessWidget {
       child: InkWell(
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-          child: Text(
+          child: SelectableText(
             this.text,
             style: Theme.of(context).textTheme.caption,
             textAlign: TextAlign.center,
@@ -59,7 +59,7 @@ class TopMenu extends StatelessWidget {
               padding: EdgeInsets.only(top: 20, left: 20),
               child: FittedBox(
                 fit: BoxFit.fitWidth,
-                child: Text(
+                child: SelectableText(
                   'WeHack',
                   style: Theme.of(context).textTheme.headline2.merge(TextStyle(
                         fontSize: 48,

@@ -20,7 +20,7 @@ class SectionPartners extends StatelessWidget {
             margin: EdgeInsets.only(top: 28, bottom: 100),
             child: Column(
               children: [
-                Text(
+                SelectableText(
                   localization.trans('PARTNERS') + "  ",
                   style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                         fontSize: 52,
